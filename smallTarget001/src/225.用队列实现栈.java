@@ -1,3 +1,4 @@
+import java.util.LinkedList;
 import java.util.Queue;
 
 /*
@@ -12,28 +13,28 @@ class MyStack {
     Queue<Integer> queue;
 
     public MyStack() {
-        queue = new LinkedList<>(); 
+        queue = new LinkedList<>();
     }
     
     public void push(int x) {
         queue.add(x);
 
         for (int i = 0; i < queue.size(); i++) {
-            int temp = queue.p
+            // int temp = queue.p
         }
     }
     
-    public int pop() {
-
-    }
-    
-    public int top() {
-
-    }
-    
-    public boolean empty() {
-
-    }
+    // public int pop() {
+    //
+    // }
+    //
+    // public int top() {
+    //
+    // }
+    //
+    // public boolean empty() {
+    //
+    // }
 }
 
 /**
