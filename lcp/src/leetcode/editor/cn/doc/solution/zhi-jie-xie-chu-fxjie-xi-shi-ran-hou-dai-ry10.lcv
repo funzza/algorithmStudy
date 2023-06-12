@@ -1,0 +1,90 @@
+> Problem: [LCP 03. 机器人大冒险](https://leetcode.cn/problems/programmable-robot/description/)
+
+[TOC]
+
+# 思路
+
+> 其实根据给定的机器人走的路线，我们大概的就可以写出他的路线的函数解析式然后带入给定的x,y的值，判断是否在函数图像上;然后在obstacles中，如果有障碍出现的比目的地早并且也在图像上，就直接返回false。
+> 其实这个地方用函数解析式不太标准，因为他一个x可以对应多个y，所以我就用一个区间来表示函数值，如果落在这个区间内，就代表在图像上
+
+# 解题方法
+
+> 1.先确定一个周期内的图像
+> 2.判断对应的x走过了多少个周期，然后加上值域，在加上当前的增量
+> (我发现一个点就是x=1,y=1然后命令为"URU"官方的那个结果是错误的)
+
+# 复杂度
+
+- 时间复杂度:
+
+> 添加时间复杂度, 示例： $O(n)$
+
+- 空间复杂度:
+
+> 添加空间复杂度, 示例： $O(n)$
+
+# Code
+
+* []
+
+```C++
+
+//代码很丑陋，见谅
+class Solution {
+    int fxarr[1000][2];
+    int TandDTY[2];
+    void T_DTY(string command){//获得周期,单个x值域,和单个周期的高度
+        int T=0,dty=0;
+        int sz=command.length();
+        for(int i=0;i<sz;i++){
+            if(command[i]=='U'){
+                dty++;
+                fxarr[T][1]++;
+            }else{
+                T++;
+                fxarr[T][0]=fxarr[T-1][1];
+                fxarr[T][1]=fxarr[T][0];
+            }
+        }
+        TandDTY[0]=T;
+        TandDTY[1]=dty;
+    }
+    vector<int> fx(int x){//根据x求出y的值
+        vector<int> ans;
+        int Valuemin=0,Valuemax=0;
+        int T=x/TandDTY[0];//周期数
+        int xadd=x%TandDTY[0];//继续走的横坐标
+        Valuemin=T*TandDTY[1]+fxarr[xadd][0];
+        Valuemax=T*TandDTY[1]+fxarr[xadd][1];
+        if(xadd==0){
+            Valuemin=Valuemin+fxarr[TandDTY[0]][0]-fxarr[TandDTY[0]][1];
+        }
+        ans.push_back(Valuemin);
+        ans.push_back(Valuemax);
+        return ans;
+    }
+public:
+    bool robot(string command, vector<vector<int>>& obstacles, int x, int y) {
+        fxarr[0][0]=0;
+        fxarr[0][1]=0;
+        T_DTY(command);
+        //写出函数表达式,带入求解
+        bool ans;
+        if(y>=fx(x)[0]&&y<=fx(x)[1]){
+            for(vector<int> arr:obstacles){
+                if(arr.size()==2){
+                    if(arr[0]<=x&&arr[1]<=y){
+                        if(arr[1]>=fx(arr[0])[0]&&arr[1]<=fx(arr[0])[1]){
+                            return false;
+                        }
+                    }
+                }
+            }
+            return true;
+        }else{
+            return false;
+        }
+    }
+};
+```
+
