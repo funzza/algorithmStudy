@@ -43,6 +43,17 @@
 class Solution {
     public int[] fraction(int[] cont) {
 
+        int n = 0;
+        int m = 1;
+
+        for (int i = cont.length - 1; i >= 0 ; i--) {
+
+            int temp = m;
+            m = cont[i] * m + n;
+            n = temp;
+        }
+
+        return new int[]{m, n};
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
