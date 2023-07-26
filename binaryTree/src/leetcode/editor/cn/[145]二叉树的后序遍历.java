@@ -65,7 +65,6 @@ class Solution {
         process(result, root);
         return result;
     }
-
     void process(List<Integer> result, TreeNode root) {
 
         if (root == null) {
