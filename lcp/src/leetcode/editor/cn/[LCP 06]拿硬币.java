@@ -34,10 +34,10 @@ class Solution {
 
         int count = 0;
         for (int i = 0; i < coins.length; i++) {
-            count += coins[i] / 2;
-            if (coins[i] % 2 == 1) {
-                count += 1;
-            }
+            count += coins[i] / 2 + coins[i] % 2;
+            // if (coins[i] % 2 == 1) {
+            //     count += 1;
+            // }
         }
 
         return count;

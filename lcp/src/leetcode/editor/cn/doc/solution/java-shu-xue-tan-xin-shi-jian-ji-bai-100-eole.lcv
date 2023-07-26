@@ -1,0 +1,58 @@
+> Problem: [LCP 06. 拿硬币](https://leetcode.cn/problems/na-ying-bi/description/)
+
+[TOC]
+
+# 思路
+
+每一堆硬币尽量一次拿两枚，最后只剩下一枚也要拿一次，拿完一堆才能拿下一堆硬币。
+
+# 解题方法
+
+- 一堆硬币最少拿的次数
+
+* 
+
+```
+int count = num%2+num/2;
+```
+
+- n堆硬币硬币的最少次数，就是那每一堆硬币次数的累加。
+
+* 
+
+```
+for (int i = 0; i < coins.length; i++) {
+   int num= coins[i];
+    //每次尽量拿两枚，不足两枚的一次拿完
+   total = total+ num%2+num/2;
+}
+```
+
+# 复杂度
+
+- 时间复杂度:  $O(n)$
+
+- 空间复杂度:  $O(1)$
+
+# Code
+
+* []
+
+```Java
+class Solution {
+   public int minCount(int[] coins) {
+        int total= 0;
+        for (int i = 0; i < coins.length; i++) {
+            int num= coins[i];
+           //每次尽量拿两枚，不足两枚的一次拿完
+            total = total+ num%2+num/2;
+        }
+        return total;
+    }
+}
+```
+
+# 执行效果
+
+![image.png](https://pic.leetcode.cn/1679577975-fjjrDh-image.png)
+
