@@ -57,7 +57,7 @@
 
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Stack;
 
 /**
  * Definition for a binary tree node.
@@ -76,22 +76,29 @@ import java.util.List;
  */
 class Solution {
     public List<Integer> preorderTraversal(TreeNode root) {
-        List<Integer> reuslt = new ArrayList<>();
 
-        process(reuslt, root);
-
-        return reuslt;
-    }
-
-    void process(List<Integer> result, TreeNode root) {
         if (root == null) {
-            return;
+            return new ArrayList<>();
         }
 
-        result.add(root.val);
-        process(result,root.left);
-        process(result,root.right);
-    }
+        List<Integer> result = new ArrayList<>();
+        Stack<TreeNode> stack = new Stack<>();
 
+        stack.push(root);
+
+        while (!stack.isEmpty()) {
+            TreeNode curNode = stack.pop();
+
+            result.add(curNode.val);
+            if (curNode.right != null) {
+                stack.push(curNode.right);
+            }
+            if (curNode.left != null) {
+                stack.push(curNode.left);
+            }
+        }
+
+        return result;
+    }
 }
 //leetcode submit region end(Prohibit modification and deletion)
