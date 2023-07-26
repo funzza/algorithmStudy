@@ -42,6 +42,8 @@
 //leetcode submit region begin(Prohibit modification and deletion)
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
 
 /**
  * Definition for a binary tree node.
@@ -61,19 +63,63 @@ import java.util.ArrayList;
 class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
 
-        List<Integer> result = new ArrayList<>();
-        process(result, root);
-        return result;
-    }
-    void process(List<Integer> result, TreeNode root) {
-
         if (root == null) {
-            return;
+            return new ArrayList<>();
         }
 
-        process(result, root.left);
-        process(result, root.right);
-        result.add(root.val);
+        List<Integer> result = new ArrayList<>();
+        Stack<TreeNode> stack = new Stack<>();
+
+        stack.push(root);
+
+        while (!stack.isEmpty()) {
+            root = stack.pop();
+            result.add(root.val);
+
+            if (root.left != null) {
+                stack.push(root.left);
+            }
+            if (root.right != null) {
+                stack.push(root.right);
+            }
+        }
+
+        Collections.reverse(result);
+
+        // reverse(result, 0, result.size() - 1);
+
+        return result;
+
     }
+
+    // void reverse(List<Integer> result, int startIndex, int endIndex) {
+    //
+    //     while (endIndex > startIndex) {
+    //         Integer start = result.get(startIndex);
+    //         Integer end = result.get(endIndex);
+    //
+    //         Integer temp = start;
+    //         result.set(startIndex, end);
+    //         result.set(endIndex, temp);
+    //         startIndex++;
+    //         endIndex--;
+    //     }
+    // }
+
+
+        // List<Integer> result = new ArrayList<>();
+        // process(result, root);
+        // return result;
+    // }
+    // void process(List<Integer> result, TreeNode root) {
+    //
+    //     if (root == null) {
+    //         return;
+    //     }
+    //
+    //     process(result, root.left);
+    //     process(result, root.right);
+    //     result.add(root.val);
+    // }
 }
 //leetcode submit region end(Prohibit modification and deletion)
