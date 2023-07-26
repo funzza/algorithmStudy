@@ -42,6 +42,7 @@
 //leetcode submit region begin(Prohibit modification and deletion)
 
 import java.util.ArrayList;
+import java.util.Stack;
 
 /**
  * Definition for a binary tree node.
@@ -61,18 +62,40 @@ import java.util.ArrayList;
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
 
+        if (root == null) {
+            return new ArrayList<>();
+        }
+
         List<Integer> result = new ArrayList<>();
-        process(result, root);
+        Stack<TreeNode> stack = new Stack<>();
+
+        TreeNode curNode = root;
+
+        while (curNode != null || !stack.isEmpty()) {
+            if (curNode != null) {
+                stack.push(curNode);
+                curNode = curNode.left;
+            } else {
+                curNode = stack.pop();
+                result.add(curNode.val);
+                curNode = curNode.right;
+            }
+        }
+
         return result;
+
+        // List<Integer> result = new ArrayList<>();
+        // process(result, root);
+        // return result;
     }
 
-    void process(List<Integer> result, TreeNode root) {
-        if (root == null) {
-            return;
-        }
-        process(result, root.left);
-        result.add(root.val);
-        process(result, root.right);
-    }
+    // void process(List<Integer> result, TreeNode root) {
+    //     if (root == null) {
+    //         return;
+    //     }
+    //     process(result, root.left);
+    //     result.add(root.val);
+    //     process(result, root.right);
+    // }
 }
 //leetcode submit region end(Prohibit modification and deletion)
