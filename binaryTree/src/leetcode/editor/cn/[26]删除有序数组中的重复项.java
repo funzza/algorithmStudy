@@ -61,6 +61,22 @@
 class Solution {
     public int removeDuplicates(int[] nums) {
 
+        int index = 1;
+
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] > nums[index - 1]) {
+                swap( nums, index++, i);
+            }
+        }
+
+        return index;
+
+    }
+
+    private void swap(int[] nums, int i, int j) {
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
