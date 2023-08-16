@@ -47,13 +47,26 @@
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public void rotate(int[] nums, int k) {
-        for (int i = 0; i < k; i++) {
-            int temp = nums[nums.length - 1];
-            int index = nums.length - 2;
-            while (index >= 0) {
-                nums[index + 1] = nums[index--];
-            }
-            nums[0] = temp;
+
+        if (nums == null || nums.length <= 1 || k == 0 || nums.length == k) {
+            return;
+        }
+
+        int length = nums.length;
+        k %= length;
+
+        reverse(nums, 0, length - 1);
+        reverse(nums, 0, k - 1);
+        reverse(nums, k, length - 1);
+    }
+
+    public void reverse(int[] nums, int left, int right) {
+        while (left < right) {
+            nums[left] ^= nums[right];
+            nums[right] ^= nums[left];
+            nums[left] ^= nums[right];
+            left++;
+            right--;
         }
     }
 }

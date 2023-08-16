@@ -57,6 +57,7 @@
 
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
 /**
@@ -77,18 +78,43 @@ import java.util.Stack;
 class Solution {
     public List<Integer> preorderTraversal(TreeNode root) {
 
+        // if (root == null) {
+        //     return new ArrayList<>();
+        // }
+        //
+        // List<Integer> result = new ArrayList<>();
+        // Stack<TreeNode> stack = new Stack<>();
+        //
+        // stack.push(root);
+        //
+        // while (!stack.isEmpty()) {
+        //     TreeNode curNode = stack.pop();
+        //
+        //     result.add(curNode.val);
+        //     if (curNode.right != null) {
+        //         stack.push(curNode.right);
+        //     }
+        //     if (curNode.left != null) {
+        //         stack.push(curNode.left);
+        //     }
+        // }
+        //
+        // return result;
+
+        // List<Integer> result = new ArrayList<>();
+        // process(result, root);
+        // return result;
+
         if (root == null) {
             return new ArrayList<>();
         }
 
         List<Integer> result = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
-
         stack.push(root);
 
         while (!stack.isEmpty()) {
             TreeNode curNode = stack.pop();
-
             result.add(curNode.val);
             if (curNode.right != null) {
                 stack.push(curNode.right);
@@ -100,5 +126,15 @@ class Solution {
 
         return result;
     }
+
+    // public void process(List<Integer> result,  TreeNode root) {
+    //     if (root == null) {
+    //         return;
+    //     }
+    //
+    //     result.add(root.val);
+    //     process(result, root.left);
+    //     process(result, root.right);
+    // }
 }
 //leetcode submit region end(Prohibit modification and deletion)
