@@ -36,7 +36,27 @@
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean isPerfectSquare(int num) {
+        if (num <= 1) {
+            return true;
+        }
 
+        long left = 1;
+        long right = num / 2;
+
+        while (left <= right) {
+            long middle = left + (right - left) / 2;
+            long temp = middle * middle;
+
+            if (temp > num) {
+                right = middle - 1;
+            } else if (temp < num) {
+                left = middle + 1;
+            } else {
+                return true;
+            }
+        }
+
+        return false;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
