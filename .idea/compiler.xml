@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dmsxl" />
+        <module name="interview150" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dmsxl" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
