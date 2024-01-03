@@ -127,10 +127,10 @@
         <entry key="$PROJECT_DIR$/array/src/leetcode/editor/cn/[704]二分查找.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/array/src/leetcode/editor/cn/doc/content/[704]二分查找.md" />
+              <option name="contentPath" value="$PROJECT_DIR$/dmsxl6/src/main/java/org/example/leetcode/leetcode/editor/cn/doc/content/[704]二分查找.md" />
               <option name="frontendQuestionId" value="leetcode.cn704" />
               <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/array/src/leetcode/editor/cn/[704]二分查找.java" />
+              <option name="path" value="$PROJECT_DIR$/dmsxl6/src/main/java/org/example/leetcode/leetcode/editor/cn/[704]二分查找.java" />
               <option name="titleSlug" value="binary-search" />
             </LeetcodeEditor>
           </value>
@@ -226,10 +226,10 @@
         <entry key="$PROJECT_DIR$/binaryTree/src/leetcode/editor/cn/[169]多数元素.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/binaryTree/src/leetcode/editor/cn/doc/content/[169]多数元素.md" />
+              <option name="contentPath" value="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/doc/content/[169]多数元素.md" />
               <option name="frontendQuestionId" value="leetcode.cn169" />
               <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/binaryTree/src/leetcode/editor/cn/[169]多数元素.java" />
+              <option name="path" value="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/[169]多数元素.java" />
               <option name="titleSlug" value="majority-element" />
             </LeetcodeEditor>
           </value>
@@ -237,10 +237,10 @@
         <entry key="$PROJECT_DIR$/binaryTree/src/leetcode/editor/cn/[189]轮转数组.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/binaryTree/src/leetcode/editor/cn/doc/content/[189]轮转数组.md" />
+              <option name="contentPath" value="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/doc/content/[189]轮转数组.md" />
               <option name="frontendQuestionId" value="leetcode.cn189" />
               <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/binaryTree/src/leetcode/editor/cn/[189]轮转数组.java" />
+              <option name="path" value="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/[189]轮转数组.java" />
               <option name="titleSlug" value="rotate-array" />
             </LeetcodeEditor>
           </value>
@@ -270,10 +270,10 @@
         <entry key="$PROJECT_DIR$/binaryTree/src/leetcode/editor/cn/[27]移除元素.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/doc/content/[27]移除元素.md" />
+              <option name="contentPath" value="$PROJECT_DIR$/dmsxl6/src/main/java/org/example/leetcode/leetcode/editor/cn/doc/content/[27]移除元素.md" />
               <option name="frontendQuestionId" value="leetcode.cn27" />
               <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/[27]移除元素.java" />
+              <option name="path" value="$PROJECT_DIR$/dmsxl6/src/main/java/org/example/leetcode/leetcode/editor/cn/[27]移除元素.java" />
               <option name="titleSlug" value="remove-element" />
             </LeetcodeEditor>
           </value>
@@ -314,10 +314,10 @@
         <entry key="$PROJECT_DIR$/binaryTree/src/leetcode/editor/cn/[80]删除有序数组中的重复项 II.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/binaryTree/src/leetcode/editor/cn/doc/content/[80]删除有序数组中的重复项 II.md" />
+              <option name="contentPath" value="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/doc/content/[80]删除有序数组中的重复项 II.md" />
               <option name="frontendQuestionId" value="leetcode.cn80" />
               <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/binaryTree/src/leetcode/editor/cn/[80]删除有序数组中的重复项 II.java" />
+              <option name="path" value="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/[80]删除有序数组中的重复项 II.java" />
               <option name="titleSlug" value="remove-duplicates-from-sorted-array-ii" />
             </LeetcodeEditor>
           </value>
@@ -355,6 +355,83 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/dmsxl6/src/main/java/org/example/leetcode/leetcode/editor/cn/[27]移除元素.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/dmsxl6/src/main/java/org/example/leetcode/leetcode/editor/cn/doc/content/[27]移除元素.md" />
+              <option name="frontendQuestionId" value="leetcode.cn27" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/dmsxl6/src/main/java/org/example/leetcode/leetcode/editor/cn/[27]移除元素.java" />
+              <option name="titleSlug" value="remove-element" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/dmsxl6/src/main/java/org/example/leetcode/leetcode/editor/cn/[704]二分查找.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/dmsxl6/src/main/java/org/example/leetcode/leetcode/editor/cn/doc/content/[704]二分查找.md" />
+              <option name="frontendQuestionId" value="leetcode.cn704" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/dmsxl6/src/main/java/org/example/leetcode/leetcode/editor/cn/[704]二分查找.java" />
+              <option name="titleSlug" value="binary-search" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/[121]买卖股票的最佳时机.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/doc/content/[121]买卖股票的最佳时机.md" />
+              <option name="frontendQuestionId" value="leetcode.cn121" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/[121]买卖股票的最佳时机.java" />
+              <option name="titleSlug" value="best-time-to-buy-and-sell-stock" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/[1276]不浪费原料的汉堡制作方案.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/doc/content/[1276]不浪费原料的汉堡制作方案.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1276" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/[1276]不浪费原料的汉堡制作方案.java" />
+              <option name="titleSlug" value="number-of-burgers-with-no-waste-of-ingredients" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/[1349]参加考试的最大学生数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/doc/content/[1349]参加考试的最大学生数.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1349" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/[1349]参加考试的最大学生数.java" />
+              <option name="titleSlug" value="maximum-students-taking-exam" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/[169]多数元素.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/doc/content/[169]多数元素.md" />
+              <option name="frontendQuestionId" value="leetcode.cn169" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/[169]多数元素.java" />
+              <option name="titleSlug" value="majority-element" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/[189]轮转数组.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/doc/content/[189]轮转数组.md" />
+              <option name="frontendQuestionId" value="leetcode.cn189" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/[189]轮转数组.java" />
+              <option name="titleSlug" value="rotate-array" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/[26]删除有序数组中的重复项.java">
           <value>
             <LeetcodeEditor>
@@ -369,11 +446,22 @@
         <entry key="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/[27]移除元素.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/doc/content/[27]移除元素.md" />
+              <option name="contentPath" value="$PROJECT_DIR$/dmsxl6/src/main/java/org/example/leetcode/leetcode/editor/cn/doc/content/[27]移除元素.md" />
               <option name="frontendQuestionId" value="leetcode.cn27" />
               <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/[27]移除元素.java" />
+              <option name="path" value="$PROJECT_DIR$/dmsxl6/src/main/java/org/example/leetcode/leetcode/editor/cn/[27]移除元素.java" />
               <option name="titleSlug" value="remove-element" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/[80]删除有序数组中的重复项 II.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/doc/content/[80]删除有序数组中的重复项 II.md" />
+              <option name="frontendQuestionId" value="leetcode.cn80" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/interview150/src/main/java/org/example/leetcode/editor/cn/[80]删除有序数组中的重复项 II.java" />
+              <option name="titleSlug" value="remove-duplicates-from-sorted-array-ii" />
             </LeetcodeEditor>
           </value>
         </entry>
